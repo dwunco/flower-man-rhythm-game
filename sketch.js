@@ -480,10 +480,10 @@ function setup() {
     { bar: 77, beat: 4, semiquaver: 1, x: 400},
     { bar: 77, beat: 4, semiquaver: 3, x: 400},
 
-    { bar: 78, beat: 2, semiquaver: 3, x: 400},
+    { bar: 78, beat: 1, semiquaver: 3, x: 400},
+    { bar: 78, beat: 2, semiquaver: 1, x: 400},
     { bar: 78, beat: 3, semiquaver: 1, x: 400},
     { bar: 78, beat: 4, semiquaver: 1, x: 400},
-    { bar: 78, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 79, beat: 1, semiquaver: 1, x: 400},
 
@@ -542,10 +542,10 @@ function setup() {
     { bar: 93, beat: 4, semiquaver: 1, x: 400},
     { bar: 93, beat: 4, semiquaver: 3, x: 400},
 
-    { bar: 94, beat: 2, semiquaver: 3, x: 400},
+    { bar: 94, beat: 1, semiquaver: 3, x: 400},
+    { bar: 94, beat: 2, semiquaver: 1, x: 400},
     { bar: 94, beat: 3, semiquaver: 1, x: 400},
     { bar: 94, beat: 4, semiquaver: 1, x: 400},
-    { bar: 94, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 95, beat: 1, semiquaver: 1, x: 400},
     { bar: 95, beat: 1, semiquaver: 2, x: 400},
