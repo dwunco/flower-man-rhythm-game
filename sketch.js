@@ -430,14 +430,14 @@ function setup() {
     // BRIDGE PART B
     { bar: 65, beat: 1, semiquaver: 1, x: 400},
     { bar: 65, beat: 4, semiquaver: 1, x: 400},
-    { bar: 65, beat: 4, semiquaver: 2, x: 400},
+    { bar: 65, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 66, beat: 3, semiquaver: 1, x: 400},
     { bar: 66, beat: 4, semiquaver: 1, x: 400},
 
     { bar: 67, beat: 1, semiquaver: 1, x: 400},
     { bar: 67, beat: 4, semiquaver: 1, x: 400},
-    { bar: 67, beat: 4, semiquaver: 2, x: 400},
+    { bar: 67, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 68, beat: 1, semiquaver: 3, x: 400},
     { bar: 68, beat: 2, semiquaver: 1, x: 400},
@@ -446,7 +446,7 @@ function setup() {
 
     { bar: 69, beat: 1, semiquaver: 1, x: 400},
     { bar: 69, beat: 4, semiquaver: 1, x: 400},
-    { bar: 69, beat: 4, semiquaver: 2, x: 400},
+    { bar: 69, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 70, beat: 2, semiquaver: 3, x: 400},
     { bar: 70, beat: 3, semiquaver: 1, x: 400},
@@ -458,18 +458,18 @@ function setup() {
     { bar: 71, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 72, beat: 3, semiquaver: 1, x: 400},
-    { bar: 72, beat: 4, semiquaver: 3, x: 400},
+    { bar: 72, beat: 4, semiquaver: 1, x: 400},
 
     { bar: 73, beat: 1, semiquaver: 1, x: 400},
     { bar: 73, beat: 4, semiquaver: 1, x: 400},
-    { bar: 73, beat: 4, semiquaver: 2, x: 400},
+    { bar: 73, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 74, beat: 3, semiquaver: 1, x: 400},
     { bar: 74, beat: 4, semiquaver: 1, x: 400},
 
     { bar: 75, beat: 1, semiquaver: 1, x: 400},
     { bar: 75, beat: 4, semiquaver: 1, x: 400},
-    { bar: 75, beat: 4, semiquaver: 2, x: 400},
+    { bar: 75, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 76, beat: 1, semiquaver: 3, x: 400},
     { bar: 76, beat: 2, semiquaver: 1, x: 400},
@@ -478,7 +478,7 @@ function setup() {
 
     { bar: 77, beat: 1, semiquaver: 1, x: 400},
     { bar: 77, beat: 4, semiquaver: 1, x: 400},
-    { bar: 77, beat: 4, semiquaver: 2, x: 400},
+    { bar: 77, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 78, beat: 2, semiquaver: 3, x: 400},
     { bar: 78, beat: 3, semiquaver: 1, x: 400},
@@ -488,18 +488,18 @@ function setup() {
     { bar: 79, beat: 1, semiquaver: 1, x: 400},
 
     { bar: 80, beat: 3, semiquaver: 1, x: 400},
-    { bar: 80, beat: 4, semiquaver: 3, x: 400},
+    { bar: 80, beat: 4, semiquaver: 1, x: 400},
 
     { bar: 81, beat: 1, semiquaver: 1, x: 400},
     { bar: 81, beat: 4, semiquaver: 1, x: 400},
-    { bar: 81, beat: 4, semiquaver: 2, x: 400},
+    { bar: 81, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 82, beat: 3, semiquaver: 1, x: 400},
     { bar: 82, beat: 4, semiquaver: 1, x: 400},
 
     { bar: 83, beat: 1, semiquaver: 1, x: 400},
     { bar: 83, beat: 4, semiquaver: 1, x: 400},
-    { bar: 83, beat: 4, semiquaver: 2, x: 400},
+    { bar: 83, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 84, beat: 1, semiquaver: 3, x: 400},
     { bar: 84, beat: 2, semiquaver: 1, x: 400},
@@ -508,7 +508,7 @@ function setup() {
 
     { bar: 85, beat: 1, semiquaver: 1, x: 400},
     { bar: 85, beat: 4, semiquaver: 1, x: 400},
-    { bar: 85, beat: 4, semiquaver: 2, x: 400},
+    { bar: 85, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 86, beat: 2, semiquaver: 3, x: 400},
     { bar: 86, beat: 3, semiquaver: 1, x: 400},
@@ -520,18 +520,18 @@ function setup() {
     { bar: 87, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 88, beat: 3, semiquaver: 1, x: 400},
-    { bar: 88, beat: 4, semiquaver: 3, x: 400},
+    { bar: 88, beat: 4, semiquaver: 1, x: 400},
 
     { bar: 89, beat: 1, semiquaver: 1, x: 400},
     { bar: 89, beat: 4, semiquaver: 1, x: 400},
-    { bar: 89, beat: 4, semiquaver: 2, x: 400},
+    { bar: 89, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 90, beat: 3, semiquaver: 1, x: 400},
     { bar: 90, beat: 4, semiquaver: 1, x: 400},
 
     { bar: 91, beat: 1, semiquaver: 1, x: 400},
     { bar: 91, beat: 4, semiquaver: 1, x: 400},
-    { bar: 91, beat: 4, semiquaver: 2, x: 400},
+    { bar: 91, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 92, beat: 1, semiquaver: 3, x: 400},
     { bar: 92, beat: 2, semiquaver: 1, x: 400},
@@ -540,7 +540,7 @@ function setup() {
 
     { bar: 93, beat: 1, semiquaver: 1, x: 400},
     { bar: 93, beat: 4, semiquaver: 1, x: 400},
-    { bar: 93, beat: 4, semiquaver: 2, x: 400},
+    { bar: 93, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 94, beat: 2, semiquaver: 3, x: 400},
     { bar: 94, beat: 3, semiquaver: 1, x: 400},
