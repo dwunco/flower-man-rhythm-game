@@ -353,6 +353,214 @@ function setup() {
     { bar: 50, beat: 4, semiquaver: 3, x: 400},
     { bar: 50, beat: 4, semiquaver: 4, x: 400},
 
+    { bar: 51, beat: 1, semiquaver: 1, x: 400}, // triplet
+    { bar: 51, beat: 1, semiquaver: 4, x: 400},
+    { bar: 51, beat: 2, semiquaver: 3, x: 400},
+    { bar: 51, beat: 3, semiquaver: 1, x: 400}, // triplet
+    { bar: 51, beat: 3, semiquaver: 4, x: 400},
+    { bar: 51, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 52, beat: 1, semiquaver: 1, x: 400},
+    { bar: 52, beat: 2, semiquaver: 1, x: 400},
+    { bar: 52, beat: 3, semiquaver: 1, x: 400},
+    { bar: 52, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 53, beat: 1, semiquaver: 1, x: 400},
+    { bar: 53, beat: 3, semiquaver: 1, x: 400},
+
+    { bar: 54, beat: 1, semiquaver: 1, x: 400}, // triplet
+    { bar: 54, beat: 1, semiquaver: 4, x: 400},
+    { bar: 54, beat: 2, semiquaver: 3, x: 400},
+    { bar: 54, beat: 3, semiquaver: 1, x: 400}, // triplet
+    { bar: 54, beat: 3, semiquaver: 4, x: 400},
+    { bar: 54, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 55, beat: 1, semiquaver: 1, x: 400},
+    { bar: 55, beat: 3, semiquaver: 1, x: 400},
+
+    { bar: 56, beat: 1, semiquaver: 1, x: 400},
+    { bar: 56, beat: 2, semiquaver: 1, x: 400},
+    { bar: 56, beat: 3, semiquaver: 1, x: 400},
+    { bar: 56, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 57, beat: 1, semiquaver: 1, x: 400},
+    { bar: 57, beat: 2, semiquaver: 1, x: 400},
+    { bar: 57, beat: 2, semiquaver: 3, x: 400},
+    { bar: 57, beat: 3, semiquaver: 1, x: 400},
+    { bar: 57, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 58, beat: 1, semiquaver: 1, x: 400}, // triplet
+    { bar: 58, beat: 1, semiquaver: 4, x: 400},
+    { bar: 58, beat: 2, semiquaver: 3, x: 400},
+    { bar: 58, beat: 3, semiquaver: 1, x: 400},
+    { bar: 58, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 59, beat: 1, semiquaver: 1, x: 400},
+    { bar: 59, beat: 1, semiquaver: 3, x: 400},
+    { bar: 59, beat: 2, semiquaver: 3, x: 400},
+    { bar: 59, beat: 3, semiquaver: 1, x: 400},
+    { bar: 59, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 60, beat: 1, semiquaver: 1, x: 400},
+    { bar: 60, beat: 2, semiquaver: 1, x: 400},
+    { bar: 60, beat: 3, semiquaver: 1, x: 400},
+    { bar: 60, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 61, beat: 1, semiquaver: 1, x: 400},
+    { bar: 61, beat: 2, semiquaver: 3, x: 400},
+    { bar: 61, beat: 2, semiquaver: 4, x: 400},
+    { bar: 61, beat: 3, semiquaver: 1, x: 400},
+
+    { bar: 62, beat: 1, semiquaver: 1, x: 400}, // triplet
+    { bar: 62, beat: 1, semiquaver: 4, x: 400},
+    { bar: 62, beat: 2, semiquaver: 3, x: 400},
+    { bar: 62, beat: 3, semiquaver: 1, x: 400}, // triplet
+    { bar: 62, beat: 3, semiquaver: 4, x: 400},
+    { bar: 62, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 63, beat: 1, semiquaver: 1, x: 400},
+    { bar: 63, beat: 3, semiquaver: 1, x: 400},
+    { bar: 63, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 64, beat: 1, semiquaver: 1, x: 400},
+    { bar: 64, beat: 2, semiquaver: 1, x: 400},
+    { bar: 64, beat: 3, semiquaver: 1, x: 400},
+    { bar: 64, beat: 4, semiquaver: 1, x: 400},
+
+    // BRIDGE PART B
+    { bar: 65, beat: 1, semiquaver: 1, x: 400},
+    { bar: 65, beat: 4, semiquaver: 1, x: 400},
+    { bar: 65, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 66, beat: 3, semiquaver: 1, x: 400},
+    { bar: 66, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 67, beat: 1, semiquaver: 1, x: 400},
+    { bar: 67, beat: 4, semiquaver: 1, x: 400},
+    { bar: 67, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 68, beat: 1, semiquaver: 3, x: 400},
+    { bar: 68, beat: 2, semiquaver: 1, x: 400},
+    { bar: 68, beat: 3, semiquaver: 1, x: 400},
+    { bar: 68, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 69, beat: 1, semiquaver: 1, x: 400},
+    { bar: 69, beat: 4, semiquaver: 1, x: 400},
+    { bar: 69, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 70, beat: 2, semiquaver: 3, x: 400},
+    { bar: 70, beat: 3, semiquaver: 1, x: 400},
+    { bar: 70, beat: 4, semiquaver: 1, x: 400},
+    { bar: 70, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 71, beat: 3, semiquaver: 1, x: 400},
+    { bar: 71, beat: 4, semiquaver: 1, x: 400},
+    { bar: 71, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 72, beat: 3, semiquaver: 1, x: 400},
+    { bar: 72, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 73, beat: 1, semiquaver: 1, x: 400},
+    { bar: 73, beat: 4, semiquaver: 1, x: 400},
+    { bar: 73, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 74, beat: 3, semiquaver: 1, x: 400},
+    { bar: 74, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 75, beat: 1, semiquaver: 1, x: 400},
+    { bar: 75, beat: 4, semiquaver: 1, x: 400},
+    { bar: 75, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 76, beat: 1, semiquaver: 3, x: 400},
+    { bar: 76, beat: 2, semiquaver: 1, x: 400},
+    { bar: 76, beat: 3, semiquaver: 1, x: 400},
+    { bar: 76, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 77, beat: 1, semiquaver: 1, x: 400},
+    { bar: 77, beat: 4, semiquaver: 1, x: 400},
+    { bar: 77, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 78, beat: 2, semiquaver: 3, x: 400},
+    { bar: 78, beat: 3, semiquaver: 1, x: 400},
+    { bar: 78, beat: 4, semiquaver: 1, x: 400},
+    { bar: 78, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 79, beat: 1, semiquaver: 1, x: 400},
+
+    { bar: 80, beat: 3, semiquaver: 1, x: 400},
+    { bar: 80, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 81, beat: 1, semiquaver: 1, x: 400},
+    { bar: 81, beat: 4, semiquaver: 1, x: 400},
+    { bar: 81, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 82, beat: 3, semiquaver: 1, x: 400},
+    { bar: 82, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 83, beat: 1, semiquaver: 1, x: 400},
+    { bar: 83, beat: 4, semiquaver: 1, x: 400},
+    { bar: 83, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 84, beat: 1, semiquaver: 3, x: 400},
+    { bar: 84, beat: 2, semiquaver: 1, x: 400},
+    { bar: 84, beat: 3, semiquaver: 1, x: 400},
+    { bar: 84, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 85, beat: 1, semiquaver: 1, x: 400},
+    { bar: 85, beat: 4, semiquaver: 1, x: 400},
+    { bar: 85, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 86, beat: 2, semiquaver: 3, x: 400},
+    { bar: 86, beat: 3, semiquaver: 1, x: 400},
+    { bar: 86, beat: 4, semiquaver: 1, x: 400},
+    { bar: 86, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 87, beat: 3, semiquaver: 1, x: 400},
+    { bar: 87, beat: 4, semiquaver: 1, x: 400},
+    { bar: 87, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 88, beat: 3, semiquaver: 1, x: 400},
+    { bar: 88, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 89, beat: 1, semiquaver: 1, x: 400},
+    { bar: 89, beat: 4, semiquaver: 1, x: 400},
+    { bar: 89, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 90, beat: 3, semiquaver: 1, x: 400},
+    { bar: 90, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 91, beat: 1, semiquaver: 1, x: 400},
+    { bar: 91, beat: 4, semiquaver: 1, x: 400},
+    { bar: 91, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 92, beat: 1, semiquaver: 3, x: 400},
+    { bar: 92, beat: 2, semiquaver: 1, x: 400},
+    { bar: 92, beat: 3, semiquaver: 1, x: 400},
+    { bar: 92, beat: 4, semiquaver: 1, x: 400},
+
+    { bar: 93, beat: 1, semiquaver: 1, x: 400},
+    { bar: 93, beat: 4, semiquaver: 1, x: 400},
+    { bar: 93, beat: 4, semiquaver: 2, x: 400},
+
+    { bar: 94, beat: 2, semiquaver: 3, x: 400},
+    { bar: 94, beat: 3, semiquaver: 1, x: 400},
+    { bar: 94, beat: 4, semiquaver: 1, x: 400},
+    { bar: 94, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 95, beat: 1, semiquaver: 1, x: 400},
+    { bar: 95, beat: 1, semiquaver: 2, x: 400},
+    { bar: 95, beat: 1, semiquaver: 3, x: 400},
+    { bar: 95, beat: 3, semiquaver: 1, x: 400},
+    { bar: 95, beat: 3, semiquaver: 2, x: 400},
+    { bar: 95, beat: 3, semiquaver: 3, x: 400},
+
+    { bar: 96, beat: 1, semiquaver: 1, x: 400},
+    { bar: 96, beat: 1, semiquaver: 4, x: 400},
+    { bar: 96, beat: 2, semiquaver: 1, x: 400},
+    { bar: 96, beat: 2, semiquaver: 3, x: 400},
+    { bar: 96, beat: 2, semiquaver: 4, x: 400},
+    { bar: 96, beat: 3, semiquaver: 1, x: 400},
+    { bar: 96, beat: 4, semiquaver: 1, x: 400},
 
     // VERSE B
     { bar: 97, beat: 1, semiquaver: 1, x: 300},
