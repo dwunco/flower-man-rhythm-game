@@ -38,6 +38,7 @@ function setup() {
     
     mySound = new Audio();
     mySound.src = './flowerman.mp3'; 
+    mySound.volume = 0.4;
 
     mySound.addEventListener('ended', () => {
         gameOver();
