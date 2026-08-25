@@ -864,10 +864,10 @@ function runGame() {
     text(`Score: ${score}`, 30, height - 10)
     if (totalNotes > 0) {
         textAlign(CENTER, TOP);
-        text(`Accuracy: ${score / totalNotes * 100}%`, width / 2, 10)
+        text(`Accuracy: ${(score / totalNotes * 100).toFixed(2)}%`, width / 2, 10)
     }
-    textAlign(LEFT, RIGHT);
-    text(`Combo: ${combo}`, 0, height - 10)
+    textAlign(RIGHT, BOTTOM);
+    text(`Combo: ${combo}`, width - 30, height - 10)
 
     for (let i = circles.length - 1; i >= 0; i--) {
         let c = circles[i];
