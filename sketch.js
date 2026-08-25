@@ -327,6 +327,32 @@ function setup() {
 
     { bar: 48, beat: 1, semiquaver: 1, x: 100},
     { bar: 48, beat: 3, semiquaver: 1, x: 700},
+    { bar: 48, beat: 4, semiquaver: 1, x: 400},
+    // BRIDGE
+    { bar: 49, beat: 1, semiquaver: 1, x: 400},
+    { bar: 49, beat: 1, semiquaver: 2, x: 400},
+    { bar: 49, beat: 1, semiquaver: 3, x: 400},
+    { bar: 49, beat: 2, semiquaver: 1, x: 400},
+    { bar: 49, beat: 2, semiquaver: 3, x: 400},
+    { bar: 49, beat: 2, semiquaver: 4, x: 400},
+    { bar: 49, beat: 3, semiquaver: 1, x: 400},
+    { bar: 49, beat: 3, semiquaver: 3, x: 400},
+    { bar: 49, beat: 4, semiquaver: 1, x: 400},
+    { bar: 49, beat: 4, semiquaver: 2, x: 400},
+    { bar: 49, beat: 4, semiquaver: 3, x: 400},
+
+    { bar: 50, beat: 1, semiquaver: 1, x: 400},
+    { bar: 50, beat: 1, semiquaver: 3, x: 400},
+    { bar: 50, beat: 1, semiquaver: 4, x: 400},
+    { bar: 50, beat: 2, semiquaver: 1, x: 400},
+    { bar: 50, beat: 2, semiquaver: 3, x: 400},
+    { bar: 50, beat: 3, semiquaver: 1, x: 400},
+    { bar: 50, beat: 3, semiquaver: 2, x: 400},
+    { bar: 50, beat: 3, semiquaver: 3, x: 400},
+    { bar: 50, beat: 4, semiquaver: 1, x: 400},
+    { bar: 50, beat: 4, semiquaver: 3, x: 400},
+    { bar: 50, beat: 4, semiquaver: 4, x: 400},
+
 
     // VERSE B
     { bar: 97, beat: 1, semiquaver: 1, x: 300},
