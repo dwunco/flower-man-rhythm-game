@@ -89,11 +89,11 @@ function setup() {
     { bar: 8, beat: 4, semiquaver: 1, x: 500},
 
     { bar: 9, beat: 1, semiquaver: 1, x: 400},
-    { bar: 9, beat: 1, semiquaver: 3, x: 350},
-    { bar: 9, beat: 1, semiquaver: 4, x: 300},
+    { bar: 9, beat: 1, semiquaver: 3, x: 375},
+    { bar: 9, beat: 1, semiquaver: 4, x: 350},
     { bar: 9, beat: 2, semiquaver: 1, x: 375},
     { bar: 9, beat: 2, semiquaver: 3, x: 450},
-    { bar: 9, beat: 2, semiquaver: 4, x: 500},
+    { bar: 9, beat: 2, semiquaver: 4, x: 425},
     { bar: 9, beat: 3, semiquaver: 1, x: 400},
     { bar: 9, beat: 4, semiquaver: 1, x: 400},
     
@@ -323,9 +323,9 @@ function runGame() {
     fill("black")
     textSize(15);
     textAlign(LEFT, BOTTOM);
-    text(`Score: ${score}`, 30, height - 20)
+    text(`Score: ${score}`, 30, height - 10)
     textAlign(LEFT, RIGHT);
-    text(`Combo: ${combo}`, width - 50, height - 20)
+    text(`Combo: ${combo}`, width - 100, height - 10)
 
     for (let c of circles) {
         if (c.hit || c.dead) continue;
