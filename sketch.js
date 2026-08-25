@@ -262,9 +262,9 @@ function setup() {
             x: note.x,
             y: -20,
             hitTime: hitTime,
-            spawnTime: hitTime - fallDuration, // Time when it should start falling
+            spawnTime: hitTime - fallDuration,
             fallDuration: fallDuration,
-            speed: (height - 50) / fallDuration, // Speed derived from canvas height and fall duration
+            speed: (height - 50) / fallDuration,
             hit: false,
             dead: false
         });
