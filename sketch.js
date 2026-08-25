@@ -9,11 +9,41 @@ let combo = 0;
 let maxScore = 0;
 let totalNotes = 0;
 let timePassed = 0;
+let accuracy;
 
 function preload() {
     hitSound = loadSound('./hit.mp3'); 
 }
 
+function determineRanking(accuracy) {
+    if (accuracy == 100.00) {
+        return "SSS (FC)"
+    }
+    else if (accuracy > 99.90) {
+        return "SS"
+    }
+    else if (accuracy > 99.00) {
+        return "S+"
+    }
+    else if (accuracy > 95.00) {
+        return "S"
+    }
+    else if (accuracy > 90.00) {
+        return "A"
+    }
+    else if (accuracy > 80.00) {
+        return "B"
+    }
+    else if (accuracy > 75.00) {
+        return "C"
+    }
+    else if (accuracy > 50.00) {
+        return "D"
+    }
+    else {
+        return "F"
+    }
+}
 
 function getSecondsFromBeat(bar, beat, semiquaver) {
     let secondsPerBeat = 60 / bpm;
@@ -864,8 +894,9 @@ function runGame() {
     textAlign(LEFT, BOTTOM);
     text(`Score: ${score}`, 30, height - 10)
     if (totalNotes > 0) {
+        accuracy = (score / totalNotes * 100).toFixed(2)
         textAlign(CENTER, TOP);
-        text(`Accuracy: ${(score / totalNotes * 100).toFixed(2)}%`, width / 2, 10)
+        text(`Accuracy: ${accuracy}% (${determineRanking(accuracy)})`, width / 2, 10)
     }
     textAlign(RIGHT, BOTTOM);
     text(`Combo: ${combo}`, width - 30, height - 10)
