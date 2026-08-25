@@ -123,28 +123,28 @@ function setup() {
 
     { bar: 13, beat: 1, semiquaver: 1, x: 400},
     { bar: 13, beat: 1, semiquaver: 3, x: 450},
-    { bar: 13, beat: 1, semiquaver: 4, x: 500},
-    { bar: 13, beat: 2, semiquaver: 1, x: 550},
+    { bar: 13, beat: 1, semiquaver: 4, x: 475},
+    { bar: 13, beat: 2, semiquaver: 1, x: 500},
     { bar: 13, beat: 2, semiquaver: 3, x: 400},
-    { bar: 13, beat: 2, semiquaver: 4, x: 300},
+    { bar: 13, beat: 2, semiquaver: 4, x: 350},
     { bar: 13, beat: 3, semiquaver: 1, x: 400},
     { bar: 13, beat: 4, semiquaver: 1, x: 500},
     
     { bar: 14, beat: 1, semiquaver: 1, x: 300},
     { bar: 14, beat: 1, semiquaver: 3, x: 350},
-    { bar: 14, beat: 1, semiquaver: 4, x: 400},
+    { bar: 14, beat: 1, semiquaver: 4, x: 375},
     { bar: 14, beat: 2, semiquaver: 1, x: 350},
     { bar: 14, beat: 2, semiquaver: 3, x: 300},
-    { bar: 14, beat: 2, semiquaver: 4, x: 200},
+    { bar: 14, beat: 2, semiquaver: 4, x: 250},
     { bar: 14, beat: 3, semiquaver: 1, x: 300},
     { bar: 14, beat: 4, semiquaver: 1, x: 200},
 
     { bar: 15, beat: 1, semiquaver: 1, x: 500},
     { bar: 15, beat: 1, semiquaver: 3, x: 550},
-    { bar: 15, beat: 1, semiquaver: 4, x: 600},
-    { bar: 15, beat: 2, semiquaver: 1, x: 650},
-    { bar: 15, beat: 2, semiquaver: 3, x: 500},
-    { bar: 15, beat: 2, semiquaver: 4, x: 400},
+    { bar: 15, beat: 1, semiquaver: 4, x: 575},
+    { bar: 15, beat: 2, semiquaver: 1, x: 600},
+    { bar: 15, beat: 2, semiquaver: 3, x: 550},
+    { bar: 15, beat: 2, semiquaver: 4, x: 525},
     { bar: 15, beat: 3, semiquaver: 1, x: 500},
     { bar: 15, beat: 4, semiquaver: 1, x: 500},
 
@@ -316,12 +316,15 @@ function runGame() {
     fill("green")
     rect(0, height - 30, width, 30)
 
+    textAlign(CENTER, CENTER);
     textSize(50);
     text("🧺", mouseX, height - 20);
 
     fill("black")
     textSize(15);
+    textAlign(LEFT, BOTTOM);
     text(`Score: ${score}`, 30, height - 20)
+    textAlign(LEFT, RIGHT);
     text(`Combo: ${combo}`, width - 50, height - 20)
 
     for (let c of circles) {
