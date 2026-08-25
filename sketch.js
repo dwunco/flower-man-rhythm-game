@@ -7,11 +7,13 @@ let gameState = "START"
 let score = 0;
 let combo = 0;
 let maxScore = 0;
+let totalNotes = 0;
 let timePassed = 0;
+
 function preload() {
-    mySound = loadSound('./flowerman.mp3'); 
-    hitSound = loadSound('./hit.mp3')
+    hitSound = loadSound('./hit.mp3'); 
 }
+
 
 function getSecondsFromBeat(bar, beat, semiquaver) {
     let secondsPerBeat = 60 / bpm;
@@ -21,22 +23,25 @@ function getSecondsFromBeat(bar, beat, semiquaver) {
 
 function mousePressed() {
     userStartAudio();
-    if (gameState === "START" && mySound.isLoaded()) {
-        clickTime = millis()
-        mySound.play(0);
+    
+    if (gameState === "START") {
+        clickTime = millis();
+        mySound.play(); 
         gameState = "PLAYING";
-        
-        mySound.onended(gameOver); 
     }
 }
 
+
 function setup() {
     createCanvas(800, 800);
+    pixelDensity(1); // Standard baseline pixels to drop graphics RAM load
+    
+    mySound = new Audio();
+    mySound.src = './flowerman.mp3'; 
 
-    if (mySound && mySound.isLoaded()) {
-        mySound.stop();
-        mySound.playMode('restart'); // Wipes playhead memory positions
-    }
+    mySound.addEventListener('ended', () => {
+        gameOver();
+    });
 
 
     let noteChart = [
@@ -244,7 +249,7 @@ function setup() {
     { bar: 30, beat: 4, semiquaver: 3, x: 450},
 
     { bar: 31, beat: 1, semiquaver: 1, x: 400},
-    { bar: 31, beat: 2, semiquaver: 4, x: 100},
+    { bar: 31, beat: 3, semiquaver: 1, x: 100},
     { bar: 31, beat: 4, semiquaver: 1, x: 200},
 
     { bar: 32, beat: 1, semiquaver: 1, x: 300},
@@ -325,7 +330,7 @@ function setup() {
     { bar: 47, beat: 4, semiquaver: 3, x: 400},
     { bar: 47, beat: 4, semiquaver: 4, x: 400},
 
-    { bar: 48, beat: 1, semiquaver: 1, x: 100},
+    { bar: 48, beat: 1, semiquaver: 1, x: 300},
     { bar: 48, beat: 3, semiquaver: 1, x: 700},
     { bar: 48, beat: 4, semiquaver: 1, x: 400},
     // BRIDGE
@@ -507,20 +512,52 @@ function setup() {
     { bar: 80, beat: 4, semiquaver: 1, x: 500},
 
     { bar: 81, beat: 1, semiquaver: 1, x: 100},
-    { bar: 81, beat: 4, semiquaver: 1, x: 700},
-    { bar: 81, beat: 4, semiquaver: 3, x: 750},
+    { bar: 81, beat: 1, semiquaver: 3, x: 150},
+    { bar: 81, beat: 1, semiquaver: 4, x: 175},
+    { bar: 81, beat: 2, semiquaver: 1, x: 200},
+    { bar: 81, beat: 2, semiquaver: 3, x: 250},
+    { bar: 81, beat: 2, semiquaver: 4, x: 275},
+    { bar: 81, beat: 3, semiquaver: 1, x: 300},
+    { bar: 81, beat: 3, semiquaver: 3, x: 350},
+    { bar: 81, beat: 3, semiquaver: 4, x: 375},
+    { bar: 81, beat: 4, semiquaver: 1, x: 400},
+    { bar: 81, beat: 4, semiquaver: 3, x: 500},
 
-    { bar: 82, beat: 3, semiquaver: 1, x: 300},
-    { bar: 82, beat: 4, semiquaver: 1, x: 500},
+    { bar: 82, beat: 1, semiquaver: 1, x: 400},
+    { bar: 82, beat: 1, semiquaver: 3, x: 450},
+    { bar: 82, beat: 1, semiquaver: 4, x: 475},
+    { bar: 82, beat: 2, semiquaver: 1, x: 450},
+    { bar: 82, beat: 2, semiquaver: 3, x: 400},
+    { bar: 82, beat: 2, semiquaver: 4, x: 375},
+    { bar: 82, beat: 3, semiquaver: 1, x: 350},
+    { bar: 82, beat: 3, semiquaver: 3, x: 300},
+    { bar: 82, beat: 3, semiquaver: 4, x: 325},
+    { bar: 82, beat: 4, semiquaver: 1, x: 375},
+    { bar: 82, beat: 4, semiquaver: 3, x: 450},
+    { bar: 82, beat: 4, semiquaver: 4, x: 475},
 
     { bar: 83, beat: 1, semiquaver: 1, x: 700},
-    { bar: 83, beat: 4, semiquaver: 1, x: 100},
-    { bar: 83, beat: 4, semiquaver: 3, x: 50},
+    { bar: 83, beat: 1, semiquaver: 3, x: 650},
+    { bar: 83, beat: 1, semiquaver: 4, x: 625},
+    { bar: 83, beat: 2, semiquaver: 1, x: 600},
+    { bar: 83, beat: 2, semiquaver: 3, x: 550},
+    { bar: 83, beat: 2, semiquaver: 4, x: 525},
+    { bar: 83, beat: 3, semiquaver: 1, x: 500},
+    { bar: 83, beat: 3, semiquaver: 3, x: 450},
+    { bar: 83, beat: 3, semiquaver: 4, x: 425},
+    { bar: 83, beat: 4, semiquaver: 1, x: 400},
+    { bar: 83, beat: 4, semiquaver: 3, x: 300},
 
     { bar: 84, beat: 1, semiquaver: 3, x: 300},
     { bar: 84, beat: 2, semiquaver: 1, x: 350},
-    { bar: 84, beat: 3, semiquaver: 1, x: 400},
-    { bar: 84, beat: 4, semiquaver: 1, x: 500},
+    { bar: 84, beat: 2, semiquaver: 3, x: 375},
+    { bar: 84, beat: 2, semiquaver: 4, x: 400},
+    { bar: 84, beat: 3, semiquaver: 1, x: 425},
+    { bar: 84, beat: 3, semiquaver: 3, x: 400},
+    { bar: 84, beat: 3, semiquaver: 4, x: 375},
+    { bar: 84, beat: 4, semiquaver: 1, x: 350},
+    { bar: 84, beat: 4, semiquaver: 3, x: 375},
+    { bar: 84, beat: 4, semiquaver: 4, x: 400},
 
     { bar: 85, beat: 1, semiquaver: 1, x: 400},
     { bar: 85, beat: 4, semiquaver: 1, x: 200},
@@ -669,7 +706,7 @@ function setup() {
     { bar: 110, beat: 4, semiquaver: 3, x: 450},
 
     { bar: 111, beat: 1, semiquaver: 1, x: 400},
-    { bar: 111, beat: 2, semiquaver: 4, x: 100},
+    { bar: 111, beat: 3, semiquaver: 1, x: 100},
     { bar: 111, beat: 4, semiquaver: 1, x: 200},
 
     { bar: 112, beat: 1, semiquaver: 1, x: 300},
@@ -750,7 +787,7 @@ function setup() {
     { bar: 127, beat: 4, semiquaver: 3, x: 400},
     { bar: 127, beat: 4, semiquaver: 4, x: 400},
 
-    { bar: 128, beat: 1, semiquaver: 1, x: 100},
+    { bar: 128, beat: 1, semiquaver: 1, x: 300},
     { bar: 128, beat: 3, semiquaver: 1, x: 700},
     ];
 
@@ -825,31 +862,39 @@ function runGame() {
     textSize(15);
     textAlign(LEFT, BOTTOM);
     text(`Score: ${score}`, 30, height - 10)
+    if (totalNotes > 0) {
+        textAlign(CENTER, TOP);
+        text(`Accuracy: ${score / totalNotes * 100}%`, width / 2, 10)
+    }
     textAlign(LEFT, RIGHT);
-    text(`Combo: ${combo}`, width - 100, height - 10)
+    text(`Combo: ${combo}`, 0, height - 10)
 
-    for (let c of circles) {
-        if (c.hit || c.dead) continue;
+    for (let i = circles.length - 1; i >= 0; i--) {
+        let c = circles[i];
 
         if (timePassed >= c.spawnTime) {
             let timeProgress = timePassed - c.spawnTime;
             c.y = map(timeProgress, 0, c.fallDuration, -20, height - 30);
+            
             fill("red");
             strokeWeight(0);
             circle(c.x, c.y, 20);
+            
             let d = dist(c.x, c.y, mouseX, height - 30);
 
-            // catch circle
             if (d < 30) {
-                c.hit = true;
-                hitSound.play(0);
+                hitSound.play(); 
                 score++;
                 combo++;
+                totalNotes++;
+                circles.splice(i, 1); 
+                continue; 
             }
-            // miss circle
             else if (c.y > height + 20) {
-                c.dead = true;
                 combo = 0;
+                totalNotes++;
+                circles.splice(i, 1); 
+                continue;
             } 
         }
     }
