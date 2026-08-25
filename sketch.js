@@ -237,7 +237,7 @@ function setup() {
     { bar: 29, beat: 4, semiquaver: 3, x: 400},
 
     { bar: 30, beat: 1, semiquaver: 1, x: 400}, // syn co pa
-    { bar: 30, beat: 1, semiquaver: 3, x: 400},
+    { bar: 30, beat: 1, semiquaver: 4, x: 400},
     { bar: 30, beat: 2, semiquaver: 3, x: 400},
     { bar: 30, beat: 3, semiquaver: 3, x: 400},
     { bar: 30, beat: 4, semiquaver: 1, x: 400},
