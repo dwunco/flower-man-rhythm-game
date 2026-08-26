@@ -17,27 +17,27 @@ function preload() {
 
 function determineRanking(accuracy) {
     if (accuracy == 100.00) {
-        return "SSS (FC)"
+        return "SSFC"
     }
-    else if (accuracy > 99.90) {
+    else if (accuracy >= 99.50) {
         return "SS"
     }
-    else if (accuracy > 99.00) {
+    else if (accuracy >= 99.00) {
         return "S+"
     }
-    else if (accuracy > 95.00) {
+    else if (accuracy >= 95.00) {
         return "S"
     }
-    else if (accuracy > 90.00) {
+    else if (accuracy >= 90.00) {
         return "A"
     }
-    else if (accuracy > 80.00) {
+    else if (accuracy >= 80.00) {
         return "B"
     }
-    else if (accuracy > 75.00) {
+    else if (accuracy >= 75.00) {
         return "C"
     }
-    else if (accuracy > 50.00) {
+    else if (accuracy >= 50.00) {
         return "D"
     }
     else {
@@ -88,11 +88,11 @@ function setup() {
     { bar: 2, beat: 3, semiquaver: 1, x: 400},
     { bar: 2, beat: 4, semiquaver: 1, x: 400},
 
-    { bar: 3, beat: 1, semiquaver: 2, x: 400},
-    { bar: 3, beat: 1, semiquaver: 3, x: 375},
+    { bar: 3, beat: 1, semiquaver: 1, x: 400},
+    { bar: 3, beat: 1, semiquaver: 2, x: 375},
     { bar: 3, beat: 1, semiquaver: 4, x: 350},
-    { bar: 3, beat: 2, semiquaver: 2, x: 325},
-    { bar: 3, beat: 2, semiquaver: 4, x: 300},
+    { bar: 3, beat: 2, semiquaver: 1, x: 325},
+    { bar: 3, beat: 2, semiquaver: 2, x: 300},
     { bar: 3, beat: 3, semiquaver: 1, x: 350},
     { bar: 3, beat: 4, semiquaver: 1, x: 400},
 
@@ -261,8 +261,8 @@ function setup() {
     { bar: 27, beat: 3, semiquaver: 1, x: 200},
     { bar: 27, beat: 4, semiquaver: 1, x: 300},
 
-    { bar: 28, beat: 1, semiquaver: 1, x: 400}, // syn co pa
-    { bar: 28, beat: 1, semiquaver: 3, x: 367},
+    { bar: 28, beat: 1, semiquaver: 1, x: 400}, // triplet
+    { bar: 28, beat: 1, semiquaver: 4, x: 367},
     { bar: 28, beat: 2, semiquaver: 3, x: 333},
     { bar: 28, beat: 3, semiquaver: 3, x: 400},
     { bar: 28, beat: 4, semiquaver: 1, x: 400},
@@ -272,7 +272,7 @@ function setup() {
     { bar: 29, beat: 3, semiquaver: 4, x: 467},
     { bar: 29, beat: 4, semiquaver: 3, x: 500},
 
-    { bar: 30, beat: 1, semiquaver: 1, x: 467}, // syn co pa
+    { bar: 30, beat: 1, semiquaver: 1, x: 467}, // triplet
     { bar: 30, beat: 1, semiquaver: 4, x: 433},
     { bar: 30, beat: 2, semiquaver: 3, x: 400},
     { bar: 30, beat: 3, semiquaver: 3, x: 350},
@@ -567,9 +567,9 @@ function setup() {
     { bar: 82, beat: 4, semiquaver: 3, x: 450},
     { bar: 82, beat: 4, semiquaver: 4, x: 475},
 
-    { bar: 83, beat: 1, semiquaver: 1, x: 700},
-    { bar: 83, beat: 1, semiquaver: 3, x: 650},
-    { bar: 83, beat: 1, semiquaver: 4, x: 625},
+    { bar: 83, beat: 1, semiquaver: 1, x: 500},
+    { bar: 83, beat: 1, semiquaver: 3, x: 550},
+    { bar: 83, beat: 1, semiquaver: 4, x: 575},
     { bar: 83, beat: 2, semiquaver: 1, x: 600},
     { bar: 83, beat: 2, semiquaver: 3, x: 550},
     { bar: 83, beat: 2, semiquaver: 4, x: 525},
@@ -591,45 +591,120 @@ function setup() {
     { bar: 84, beat: 4, semiquaver: 4, x: 400},
 
     { bar: 85, beat: 1, semiquaver: 1, x: 400},
+    { bar: 85, beat: 1, semiquaver: 3, x: 350},
+    { bar: 85, beat: 1, semiquaver: 4, x: 325},
+    { bar: 85, beat: 2, semiquaver: 1, x: 300},
+    { bar: 85, beat: 2, semiquaver: 3, x: 250},
+    { bar: 85, beat: 2, semiquaver: 4, x: 225},
+    { bar: 85, beat: 3, semiquaver: 1, x: 200},
+    { bar: 85, beat: 3, semiquaver: 3, x: 150},
+    { bar: 85, beat: 3, semiquaver: 4, x: 175},
     { bar: 85, beat: 4, semiquaver: 1, x: 200},
     { bar: 85, beat: 4, semiquaver: 3, x: 150},
+    { bar: 85, beat: 4, semiquaver: 4, x: 175},
 
-    { bar: 86, beat: 2, semiquaver: 3, x: 200},
-    { bar: 86, beat: 3, semiquaver: 1, x: 250},
+    { bar: 86, beat: 1, semiquaver: 1, x: 200},
+    { bar: 86, beat: 1, semiquaver: 3, x: 250},
+    { bar: 86, beat: 1, semiquaver: 4, x: 225},
+    { bar: 86, beat: 2, semiquaver: 1, x: 200},
+    { bar: 86, beat: 2, semiquaver: 3, x: 250},
+    { bar: 86, beat: 3, semiquaver: 1, x: 300},
+    { bar: 86, beat: 3, semiquaver: 3, x: 350},
+    { bar: 86, beat: 3, semiquaver: 4, x: 375},
     { bar: 86, beat: 4, semiquaver: 1, x: 400},
     { bar: 86, beat: 4, semiquaver: 3, x: 450},
+    
+    { bar: 87, beat: 1, semiquaver: 1, x: 500},
+    { bar: 87, beat: 1, semiquaver: 3, x: 525},
+    { bar: 87, beat: 1, semiquaver: 4, x: 550},
+    { bar: 87, beat: 2, semiquaver: 1, x: 575},
+    { bar: 87, beat: 2, semiquaver: 3, x: 625},
+    { bar: 87, beat: 2, semiquaver: 4, x: 650},
+    { bar: 87, beat: 3, semiquaver: 1, x: 675},
+    { bar: 87, beat: 3, semiquaver: 3, x: 700},
+    { bar: 87, beat: 3, semiquaver: 4, x: 675},
+    { bar: 87, beat: 4, semiquaver: 1, x: 650},
+    { bar: 87, beat: 4, semiquaver: 3, x: 600},
+    { bar: 87, beat: 4, semiquaver: 4, x: 550},
 
-    { bar: 87, beat: 3, semiquaver: 1, x: 700},
-    { bar: 87, beat: 4, semiquaver: 1, x: 600},
-    { bar: 87, beat: 4, semiquaver: 3, x: 500},
-
-    { bar: 88, beat: 3, semiquaver: 1, x: 400},
-    { bar: 88, beat: 4, semiquaver: 1, x: 400},
+    { bar: 88, beat: 1, semiquaver: 1, x: 525},
+    { bar: 88, beat: 1, semiquaver: 3, x: 475},
+    { bar: 88, beat: 1, semiquaver: 4, x: 450},
+    { bar: 88, beat: 2, semiquaver: 1, x: 425},
+    { bar: 88, beat: 2, semiquaver: 3, x: 375},
+    { bar: 88, beat: 2, semiquaver: 4, x: 350},
+    { bar: 88, beat: 3, semiquaver: 1, x: 300},
+    { bar: 88, beat: 4, semiquaver: 1, x: 200},
 
     { bar: 89, beat: 1, semiquaver: 1, x: 100},
-    { bar: 89, beat: 4, semiquaver: 1, x: 700},
-    { bar: 89, beat: 4, semiquaver: 3, x: 750},
+    { bar: 89, beat: 1, semiquaver: 3, x: 150},
+    { bar: 89, beat: 1, semiquaver: 4, x: 175},
+    { bar: 89, beat: 2, semiquaver: 1, x: 200},
+    { bar: 89, beat: 2, semiquaver: 3, x: 250},
+    { bar: 89, beat: 2, semiquaver: 4, x: 275},
+    { bar: 89, beat: 3, semiquaver: 1, x: 300},
+    { bar: 89, beat: 3, semiquaver: 3, x: 350},
+    { bar: 89, beat: 3, semiquaver: 4, x: 375},
+    { bar: 89, beat: 4, semiquaver: 1, x: 400},
+    { bar: 89, beat: 4, semiquaver: 3, x: 500},
 
-    { bar: 90, beat: 3, semiquaver: 1, x: 300},
-    { bar: 90, beat: 4, semiquaver: 1, x: 500},
+    { bar: 90, beat: 1, semiquaver: 1, x: 400},
+    { bar: 90, beat: 1, semiquaver: 3, x: 450},
+    { bar: 90, beat: 1, semiquaver: 4, x: 475},
+    { bar: 90, beat: 2, semiquaver: 1, x: 450},
+    { bar: 90, beat: 2, semiquaver: 3, x: 400},
+    { bar: 90, beat: 2, semiquaver: 4, x: 375},
+    { bar: 90, beat: 3, semiquaver: 1, x: 350},
+    { bar: 90, beat: 3, semiquaver: 3, x: 300},
+    { bar: 90, beat: 3, semiquaver: 4, x: 325},
+    { bar: 90, beat: 4, semiquaver: 1, x: 375},
+    { bar: 90, beat: 4, semiquaver: 3, x: 450},
+    { bar: 90, beat: 4, semiquaver: 4, x: 475},
 
-    { bar: 91, beat: 1, semiquaver: 1, x: 700},
-    { bar: 91, beat: 4, semiquaver: 1, x: 100},
-    { bar: 91, beat: 4, semiquaver: 3, x: 50},
+    { bar: 91, beat: 1, semiquaver: 1, x: 500},
+    { bar: 91, beat: 1, semiquaver: 3, x: 550},
+    { bar: 91, beat: 1, semiquaver: 4, x: 575},
+    { bar: 91, beat: 2, semiquaver: 1, x: 600},
+    { bar: 91, beat: 2, semiquaver: 3, x: 550},
+    { bar: 91, beat: 2, semiquaver: 4, x: 525},
+    { bar: 91, beat: 3, semiquaver: 1, x: 500},
+    { bar: 91, beat: 3, semiquaver: 3, x: 450},
+    { bar: 91, beat: 3, semiquaver: 4, x: 425},
+    { bar: 91, beat: 4, semiquaver: 1, x: 400},
+    { bar: 91, beat: 4, semiquaver: 3, x: 300},
 
     { bar: 92, beat: 1, semiquaver: 3, x: 300},
     { bar: 92, beat: 2, semiquaver: 1, x: 350},
-    { bar: 92, beat: 3, semiquaver: 1, x: 400},
-    { bar: 92, beat: 4, semiquaver: 1, x: 500},
+    { bar: 92, beat: 2, semiquaver: 3, x: 375},
+    { bar: 92, beat: 2, semiquaver: 4, x: 400},
+    { bar: 92, beat: 3, semiquaver: 1, x: 425},
+    { bar: 92, beat: 3, semiquaver: 3, x: 400},
+    { bar: 92, beat: 3, semiquaver: 4, x: 375},
+    { bar: 92, beat: 4, semiquaver: 1, x: 350},
+    { bar: 92, beat: 4, semiquaver: 3, x: 375},
+    { bar: 92, beat: 4, semiquaver: 4, x: 400},
 
     { bar: 93, beat: 1, semiquaver: 1, x: 400},
+    { bar: 93, beat: 1, semiquaver: 3, x: 350},
+    { bar: 93, beat: 1, semiquaver: 4, x: 325},
+    { bar: 93, beat: 2, semiquaver: 1, x: 300},
+    { bar: 93, beat: 2, semiquaver: 3, x: 250},
+    { bar: 93, beat: 2, semiquaver: 4, x: 225},
+    { bar: 93, beat: 3, semiquaver: 1, x: 200},
+    { bar: 93, beat: 3, semiquaver: 3, x: 150},
+    { bar: 93, beat: 3, semiquaver: 4, x: 175},
     { bar: 93, beat: 4, semiquaver: 1, x: 200},
     { bar: 93, beat: 4, semiquaver: 3, x: 150},
+    { bar: 93, beat: 4, semiquaver: 4, x: 175},
 
-    { bar: 94, beat: 1, semiquaver: 3, x: 200},
-    { bar: 94, beat: 2, semiquaver: 1, x: 250},
-    { bar: 94, beat: 3, semiquaver: 1, x: 350},
-    { bar: 94, beat: 4, semiquaver: 1, x: 450},
+    { bar: 94, beat: 1, semiquaver: 1, x: 200},
+    { bar: 94, beat: 1, semiquaver: 3, x: 250},
+    { bar: 94, beat: 1, semiquaver: 4, x: 225},
+    { bar: 94, beat: 2, semiquaver: 1, x: 200},
+    { bar: 94, beat: 2, semiquaver: 3, x: 250},
+    { bar: 94, beat: 2, semiquaver: 4, x: 275},
+    { bar: 94, beat: 3, semiquaver: 1, x: 300},
+    { bar: 94, beat: 4, semiquaver: 1, x: 400},
 
     { bar: 95, beat: 1, semiquaver: 1, x: 300},
     { bar: 95, beat: 1, semiquaver: 2, x: 300},
@@ -718,8 +793,8 @@ function setup() {
     { bar: 107, beat: 3, semiquaver: 1, x: 200},
     { bar: 107, beat: 4, semiquaver: 1, x: 300},
 
-    { bar: 108, beat: 1, semiquaver: 1, x: 400}, // syn co pa
-    { bar: 108, beat: 1, semiquaver: 3, x: 367},
+    { bar: 108, beat: 1, semiquaver: 1, x: 400}, // triplet
+    { bar: 108, beat: 1, semiquaver: 4, x: 367},
     { bar: 108, beat: 2, semiquaver: 3, x: 333},
     { bar: 108, beat: 3, semiquaver: 3, x: 400},
     { bar: 108, beat: 4, semiquaver: 1, x: 400},
@@ -729,7 +804,7 @@ function setup() {
     { bar: 109, beat: 3, semiquaver: 4, x: 467},
     { bar: 109, beat: 4, semiquaver: 3, x: 500},
 
-    { bar: 110, beat: 1, semiquaver: 1, x: 467}, // syn co pa
+    { bar: 110, beat: 1, semiquaver: 1, x: 467}, // triplet
     { bar: 110, beat: 1, semiquaver: 4, x: 433},
     { bar: 110, beat: 2, semiquaver: 3, x: 400},
     { bar: 110, beat: 3, semiquaver: 3, x: 350},
@@ -823,7 +898,7 @@ function setup() {
     ];
 
     for (let note of noteChart) {
-        maxScore++;
+        maxScore += 100;
         let hitTime = getSecondsFromBeat(note.bar, note.beat, note.semiquaver);
         let fallDuration = 0.9;
         
@@ -864,9 +939,10 @@ function drawGameOverScreen() {
     textAlign(CENTER, CENTER);
     fill("black");
     textSize(32);
-    text("Game Over!", width / 2, height / 2 - 20);
+    text("Game Over!", width / 2, height / 2 - 50);
     textSize(20);
-    text(`Final Score: ${score}/${maxScore}`, width / 2, height / 2 + 20);
+    text(`Accuracy: ${accuracy}% (${determineRanking(accuracy)})`, width / 2, height / 2);
+    text(`Final Score: ${score}/${maxScore}`, width / 2, height / 2 + 50);
 }
 
 function gameOver() {
@@ -894,7 +970,7 @@ function runGame() {
     textAlign(LEFT, BOTTOM);
     text(`Score: ${score}`, 30, height - 10)
     if (totalNotes > 0) {
-        accuracy = (score / totalNotes * 100).toFixed(2)
+        accuracy = ((score / 100) / totalNotes * 100).toFixed(2)
         textAlign(CENTER, TOP);
         text(`Accuracy: ${accuracy}% (${determineRanking(accuracy)})`, width / 2, 10)
     }
@@ -916,7 +992,7 @@ function runGame() {
 
             if (d < 30) {
                 hitSound.play(); 
-                score++;
+                score += 100;
                 combo++;
                 totalNotes++;
                 circles.splice(i, 1); 
