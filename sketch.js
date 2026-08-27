@@ -897,7 +897,7 @@ function setup() {
     for (let note of noteChart) {
         maxScore += 100;
         let hitTime = getSecondsFromBeat(note.bar, note.beat, note.semiquaver);
-        let fallDuration = 0.9;
+        let fallDuration = 1.2;
         
         circles.push({
             x: note.x,
