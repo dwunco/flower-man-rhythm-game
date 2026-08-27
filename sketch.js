@@ -19,11 +19,8 @@ function determineRanking(accuracy) {
     if (accuracy == 100.00) {
         return "SSFC"
     }
-    else if (accuracy >= 99.50) {
-        return "SS"
-    }
     else if (accuracy >= 99.00) {
-        return "S+"
+        return "SS"
     }
     else if (accuracy >= 95.00) {
         return "S"
@@ -962,7 +959,7 @@ function runGame() {
     rect(0, height - 30, width, 30)
 
     textAlign(CENTER, CENTER);
-    textSize(50);
+    textSize(75);
     text("🧺", mouseX, height - 20);
 
     fill("black")
@@ -990,7 +987,7 @@ function runGame() {
             
             let d = dist(c.x, c.y, mouseX, height - 30);
 
-            if (d < 30) {
+            if (d < 50) {
                 hitSound.play(); 
                 score += 100;
                 combo++;
