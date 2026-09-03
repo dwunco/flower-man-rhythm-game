@@ -912,8 +912,18 @@ function setup() {
     };
 }
 
+function drawBackground(timePassed) {
+    if (timePassed >= getSecondsFromBeat(65, 1, 1) && timePassed < getSecondsFromBeat(113, 1, 1)) {
+        return "#ff930d"
+    }
+    else {
+        return "#00c8ff"
+    }
+}
+
 function draw() {
-    background(0, 200, 255);
+    let backgroundColour = drawBackground(timePassed)
+    background(backgroundColour);
 
     if (gameState === "START") {
         drawStartScreen();
@@ -958,22 +968,6 @@ function runGame() {
     fill("green")
     rect(0, height - 30, width, 30)
 
-    textAlign(CENTER, CENTER);
-    textSize(75);
-    text("🧺", mouseX, height - 20);
-
-    fill("black")
-    textSize(15);
-    textAlign(LEFT, BOTTOM);
-    text(`Score: ${score}`, 30, height - 10)
-    if (totalNotes > 0) {
-        accuracy = ((score / 100) / totalNotes * 100).toFixed(2)
-        textAlign(CENTER, TOP);
-        text(`Accuracy: ${accuracy}% (${determineRanking(accuracy)})`, width / 2, 10)
-    }
-    textAlign(RIGHT, BOTTOM);
-    text(`Combo: ${combo}`, width - 30, height - 10)
-
     for (let i = circles.length - 1; i >= 0; i--) {
         let c = circles[i];
 
@@ -1003,4 +997,20 @@ function runGame() {
             } 
         }
     }
+
+    textAlign(CENTER, CENTER);
+    textSize(75);
+    text("🧺", mouseX, height - 20);
+
+    fill("black")
+    textSize(15);
+    textAlign(LEFT, BOTTOM);
+    text(`Score: ${score}`, 30, height - 10)
+    if (totalNotes > 0) {
+        accuracy = ((score / 100) / totalNotes * 100).toFixed(2)
+        textAlign(CENTER, TOP);
+        text(`Accuracy: ${accuracy}% (${determineRanking(accuracy)})`, width / 2, 10)
+    }
+    textAlign(RIGHT, BOTTOM);
+    text(`Combo: ${combo}`, width - 30, height - 10)
 }
