@@ -37,6 +37,9 @@ function determineRanking(accuracy) {
     else if (accuracy >= 50.00) {
         return "D"
     }
+    else if (accuracy == 0.00) {
+        return "FFNC"
+    }
     else {
         return "F"
     }
@@ -957,7 +960,7 @@ function gameOver() {
 }
 
 function runGame() {
-    background(0, 200, 255);
+    background(drawBackground(timePassed));
 
     fill("red");
     strokeWeight(0);
