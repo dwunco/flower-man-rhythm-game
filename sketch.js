@@ -932,10 +932,10 @@ function lyrics(timePassed) {
         return "Is waiting for the touch of his hand";
     }
     else if (timePassed >= getSecondsFromBeat(21, 3, 1) && timePassed < getSecondsFromBeat(23, 3, 1)) {
-        return "Straightening petals out without a plan"
+        return "Straightening petals out without a plan";
     }
     else if (timePassed >= getSecondsFromBeat(23, 3, 1) && timePassed < getSecondsFromBeat(25, 1, 1)) {
-        return "Like the every daily"
+        return "Like the every daily";
     }
     else if (timePassed >= getSecondsFromBeat(25, 1, 1) && timePassed < getSecondsFromBeat(27, 2, 1)) {
         return "Wish that bothers the flower man";
@@ -944,40 +944,40 @@ function lyrics(timePassed) {
         return "Could I do something to make him laugh?";
     }
     else if (timePassed >= getSecondsFromBeat(29, 3, 1) && timePassed < getSecondsFromBeat(31, 3, 1)) {
-        return "Inside my little chamber made of glass"
+        return "Inside my little chamber made of glass";
     }
     else if (timePassed >= getSecondsFromBeat(31, 3, 1) && timePassed < getSecondsFromBeat(32, 3, 1)) {
-        return "So he lived the"
+        return "So he lived the";
     }
     else if (timePassed >= getSecondsFromBeat(32, 3, 1) && timePassed < getSecondsFromBeat(34, 3, 1)) {
-        return "Flower Man, Flower Man"
+        return "Flower Man, Flower Man";
     }
     else if (timePassed >= getSecondsFromBeat(34, 3, 1) && timePassed < getSecondsFromBeat(36, 3, 1)) {
-        return "With his heart in the sand"
+        return "With his heart in the sand";
     }
     else if (timePassed >= getSecondsFromBeat(36, 3, 1) && timePassed < getSecondsFromBeat(37, 4, 1)) {
-        return "So he stands"
+        return "So he stands";
     }
     else if (timePassed >= getSecondsFromBeat(37, 4, 1) && timePassed < getSecondsFromBeat(39, 3, 3)) {
-        return "To watch the whole wide world"
+        return "To watch the whole wide world";
     }
     else if (timePassed >= getSecondsFromBeat(39, 3, 3) && timePassed < getSecondsFromBeat(40, 3, 1)) {
-        return "From a can"
+        return "From a can";
     }
     else if (timePassed >= getSecondsFromBeat(40, 3, 1) && timePassed < getSecondsFromBeat(42, 3, 1)) {
-        return "Way up high in the sky"
+        return "Way up high in the sky";
     }
     else if (timePassed >= getSecondsFromBeat(42, 3, 1) && timePassed < getSecondsFromBeat(44, 3, 1)) {
-        return "With the sun in his eyes"
+        return "With the sun in his eyes";
     }
-    else if (timePassed >= getSecondsFromBeat(44, 3, 1) && timePassed < getSecondsFromBeat(46, 4, 1)) {
-        return "Ain't it nice"
+    else if (timePassed >= getSecondsFromBeat(44, 3, 1) && timePassed < getSecondsFromBeat(45, 4, 1)) {
+        return "Ain't it nice";
     }
-    else if (timePassed >= getSecondsFromBeat(46, 4, 1) && timePassed < getSecondsFromBeat(47, 1, 1)) {
-        return "The life forever for"
+    else if (timePassed >= getSecondsFromBeat(45, 4, 1) && timePassed < getSecondsFromBeat(47, 1, 1)) {
+        return "The life forever for";
     }
-    else if (timePassed >= getSecondsFromBeat(47, 1, 1) && timePassed < getSecondsFromBeat(48, 1, 1)) {
-        return "Flowers"
+    else if (timePassed >= getSecondsFromBeat(47, 1, 1) && timePassed < getSecondsFromBeat(49, 1, 1)) {
+        return "Flowers";
     }
     if (timePassed >= getSecondsFromBeat(97, 1, 1) && timePassed < getSecondsFromBeat(99, 2, 1)) {
         return "Ten feet twenty the Flower Man";
