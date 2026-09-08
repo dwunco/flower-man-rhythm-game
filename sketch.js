@@ -982,7 +982,7 @@ function lyrics(timePassed) {
     if (timePassed >= getSecondsFromBeat(97, 1, 1) && timePassed < getSecondsFromBeat(99, 2, 1)) {
         return "Ten feet twenty the Flower Man";
     }
-    else if (timePassed >= getSecondsFromBeat(99, 2, 1) && timePassed < getSecondsFromBeat(91, 3, 1)) {
+    else if (timePassed >= getSecondsFromBeat(99, 2, 1) && timePassed < getSecondsFromBeat(101, 3, 1)) {
         return "Is waiting for the touch of his hand";
     }
     else if (timePassed >= getSecondsFromBeat(101, 3, 1) && timePassed < getSecondsFromBeat(103, 3, 1)) {
