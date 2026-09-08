@@ -916,11 +916,125 @@ function setup() {
 }
 
 function drawBackground(timePassed) {
-    if (timePassed >= getSecondsFromBeat(65, 1, 1) && timePassed < getSecondsFromBeat(113, 1, 1)) {
-        return "#ff930d"
+    if (timePassed >= getSecondsFromBeat(65, 1, 1) && timePassed < getSecondsFromBeat(97, 1, 1)) {
+        return "#ff930d";
     }
     else {
-        return "#00c8ff"
+        return "#00c8ff";
+    }
+}
+
+function lyrics(timePassed) {
+    if (timePassed >= getSecondsFromBeat(17, 1, 1) && timePassed < getSecondsFromBeat(19, 2, 1)) {
+        return "Ten feet twenty the Flower Man";
+    }
+    else if (timePassed >= getSecondsFromBeat(19, 2, 1) && timePassed < getSecondsFromBeat(21, 3, 1)) {
+        return "Is waiting for the touch of his hand";
+    }
+    else if (timePassed >= getSecondsFromBeat(21, 3, 1) && timePassed < getSecondsFromBeat(23, 3, 1)) {
+        return "Straightening petals out without a plan"
+    }
+    else if (timePassed >= getSecondsFromBeat(23, 3, 1) && timePassed < getSecondsFromBeat(25, 1, 1)) {
+        return "Like the every daily"
+    }
+    else if (timePassed >= getSecondsFromBeat(25, 1, 1) && timePassed < getSecondsFromBeat(27, 2, 1)) {
+        return "Wish that bothers the flower man";
+    }
+    else if (timePassed >= getSecondsFromBeat(27, 2, 1) && timePassed < getSecondsFromBeat(29, 3, 1)) {
+        return "Could I do something to make him laugh?";
+    }
+    else if (timePassed >= getSecondsFromBeat(29, 3, 1) && timePassed < getSecondsFromBeat(31, 3, 1)) {
+        return "Inside my little chamber made of glass"
+    }
+    else if (timePassed >= getSecondsFromBeat(31, 3, 1) && timePassed < getSecondsFromBeat(32, 3, 1)) {
+        return "So he lived the"
+    }
+    else if (timePassed >= getSecondsFromBeat(32, 3, 1) && timePassed < getSecondsFromBeat(34, 3, 1)) {
+        return "Flower Man, Flower Man"
+    }
+    else if (timePassed >= getSecondsFromBeat(34, 3, 1) && timePassed < getSecondsFromBeat(36, 3, 1)) {
+        return "With his heart in the sand"
+    }
+    else if (timePassed >= getSecondsFromBeat(36, 3, 1) && timePassed < getSecondsFromBeat(37, 4, 1)) {
+        return "So he stands"
+    }
+    else if (timePassed >= getSecondsFromBeat(37, 4, 1) && timePassed < getSecondsFromBeat(39, 3, 3)) {
+        return "To watch the whole wide world"
+    }
+    else if (timePassed >= getSecondsFromBeat(39, 3, 3) && timePassed < getSecondsFromBeat(40, 3, 1)) {
+        return "From a can"
+    }
+    else if (timePassed >= getSecondsFromBeat(40, 3, 1) && timePassed < getSecondsFromBeat(42, 3, 1)) {
+        return "Way up high in the sky"
+    }
+    else if (timePassed >= getSecondsFromBeat(42, 3, 1) && timePassed < getSecondsFromBeat(44, 3, 1)) {
+        return "With the sun in his eyes"
+    }
+    else if (timePassed >= getSecondsFromBeat(44, 3, 1) && timePassed < getSecondsFromBeat(46, 4, 1)) {
+        return "Ain't it nice"
+    }
+    else if (timePassed >= getSecondsFromBeat(46, 4, 1) && timePassed < getSecondsFromBeat(47, 1, 1)) {
+        return "The life forever for"
+    }
+    else if (timePassed >= getSecondsFromBeat(47, 1, 1) && timePassed < getSecondsFromBeat(48, 1, 1)) {
+        return "Flowers"
+    }
+    if (timePassed >= getSecondsFromBeat(97, 1, 1) && timePassed < getSecondsFromBeat(99, 2, 1)) {
+        return "Ten feet twenty the Flower Man";
+    }
+    else if (timePassed >= getSecondsFromBeat(99, 2, 1) && timePassed < getSecondsFromBeat(91, 3, 1)) {
+        return "Is waiting for the touch of his hand";
+    }
+    else if (timePassed >= getSecondsFromBeat(101, 3, 1) && timePassed < getSecondsFromBeat(103, 3, 1)) {
+        return "Fallen to pieces still without a plan"
+    }
+    else if (timePassed >= getSecondsFromBeat(103, 3, 1) && timePassed < getSecondsFromBeat(105, 1, 1)) {
+        return "Yet the every daily"
+    }
+    else if (timePassed >= getSecondsFromBeat(105, 1, 1) && timePassed < getSecondsFromBeat(107, 2, 1)) {
+        return "Hope that powered the Flower Man";
+    }
+    else if (timePassed >= getSecondsFromBeat(107, 2, 1) && timePassed < getSecondsFromBeat(109, 3, 1)) {
+        return "Would never cower off of its path";
+    }
+    else if (timePassed >= getSecondsFromBeat(109, 3, 1) && timePassed < getSecondsFromBeat(111, 3, 1)) {
+        return "Even if broken I am more than glass"
+    }
+    else if (timePassed >= getSecondsFromBeat(111, 3, 1) && timePassed < getSecondsFromBeat(112, 3, 1)) {
+        return "So he lived the"
+    }
+    else if (timePassed >= getSecondsFromBeat(112, 3, 1) && timePassed < getSecondsFromBeat(114, 3, 1)) {
+        return "Flower Man, Flower Man"
+    }
+    else if (timePassed >= getSecondsFromBeat(114, 3, 1) && timePassed < getSecondsFromBeat(116, 3, 1)) {
+        return "With his heart in the sand"
+    }
+    else if (timePassed >= getSecondsFromBeat(116, 3, 1) && timePassed < getSecondsFromBeat(117, 4, 1)) {
+        return "So he stands"
+    }
+    else if (timePassed >= getSecondsFromBeat(117, 4, 1) && timePassed < getSecondsFromBeat(119, 3, 3)) {
+        return "To watch the whole wide world"
+    }
+    else if (timePassed >= getSecondsFromBeat(119, 3, 3) && timePassed < getSecondsFromBeat(120, 3, 1)) {
+        return "From a can"
+    }
+    else if (timePassed >= getSecondsFromBeat(120, 3, 1) && timePassed < getSecondsFromBeat(122, 3, 1)) {
+        return "Way up high in the sky"
+    }
+    else if (timePassed >= getSecondsFromBeat(122, 3, 1) && timePassed < getSecondsFromBeat(124, 3, 1)) {
+        return "With the sun in his eyes"
+    }
+    else if (timePassed >= getSecondsFromBeat(124, 3, 1) && timePassed < getSecondsFromBeat(126, 4, 1)) {
+        return "Ain't it nice"
+    }
+    else if (timePassed >= getSecondsFromBeat(126, 4, 1) && timePassed < getSecondsFromBeat(127, 1, 1)) {
+        return "The life forever for"
+    }
+    else if (timePassed >= getSecondsFromBeat(127, 1, 1) && timePassed < getSecondsFromBeat(128, 1, 1)) {
+        return "Flowers"
+    }
+    else {
+        return ""
     }
 }
 
@@ -1000,20 +1114,20 @@ function runGame() {
             } 
         }
     }
-
     textAlign(CENTER, CENTER);
     textSize(75);
     text("🧺", mouseX, height - 20);
-
-    fill("black")
+    textSize(30);
+    fill("black");
+    text(`${lyrics(timePassed)}`, width / 2, 100);
     textSize(15);
     textAlign(LEFT, BOTTOM);
-    text(`Score: ${score}`, 30, height - 10)
+    text(`Score: ${score}`, 30, height - 10);
     if (totalNotes > 0) {
-        accuracy = ((score / 100) / totalNotes * 100).toFixed(2)
+        accuracy = ((score / 100) / totalNotes * 100).toFixed(2);
         textAlign(CENTER, TOP);
-        text(`Accuracy: ${accuracy}% (${determineRanking(accuracy)})`, width / 2, 10)
+        text(`Accuracy: ${accuracy}% (${determineRanking(accuracy)})`, width / 2, 10);
     }
     textAlign(RIGHT, BOTTOM);
-    text(`Combo: ${combo}`, width - 30, height - 10)
+    text(`Combo: ${combo}`, width - 30, height - 10);
 }
