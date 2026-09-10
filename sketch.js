@@ -976,7 +976,7 @@ function lyrics(timePassed) {
     else if (timePassed >= getSecondsFromBeat(45, 4, 1) && timePassed < getSecondsFromBeat(47, 1, 1)) {
         return "The life forever for";
     }
-    else if (timePassed >= getSecondsFromBeat(47, 1, 1) && timePassed < getSecondsFromBeat(49, 1, 1)) {
+    else if (timePassed >= getSecondsFromBeat(48, 1, 1) && timePassed < getSecondsFromBeat(49, 1, 1)) {
         return "Flowers";
     }
     if (timePassed >= getSecondsFromBeat(97, 1, 1) && timePassed < getSecondsFromBeat(99, 2, 1)) {
@@ -1030,7 +1030,7 @@ function lyrics(timePassed) {
     else if (timePassed >= getSecondsFromBeat(126, 4, 1) && timePassed < getSecondsFromBeat(127, 1, 1)) {
         return "The life forever for"
     }
-    else if (timePassed >= getSecondsFromBeat(127, 1, 1) && timePassed < getSecondsFromBeat(128, 1, 1)) {
+    else if (timePassed >= getSecondsFromBeat(128, 1, 1) && timePassed < getSecondsFromBeat(129, 1, 1)) {
         return "Flowers"
     }
     else {
