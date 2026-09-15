@@ -10,6 +10,8 @@ let maxScore = 0;
 let totalNotes = 0;
 let timePassed = 0;
 let accuracy;
+let colourIndex = 0;
+let colours = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
 
 function preload() {
     hitSound = loadSound('./hit.mp3'); 
@@ -1075,15 +1077,19 @@ function gameOver() {
 
 function runGame() {
     background(drawBackground(timePassed));
-
-    fill("red");
+    fill(colours[colourIndex]);
+    if (colourIndex < colours.length - 1) {
+        colourIndex++;
+    } else {
+        colourIndex = 0;
+    }
     strokeWeight(0);
 
     fill("grey")
-    rect(0, 0, width, 30)
+    rect(0, 0, width, 30);
 
-    fill("green")
-    rect(0, height - 30, width, 30)
+    fill("green");
+    rect(0, height - 30, width, 30);
 
     for (let i = circles.length - 1; i >= 0; i--) {
         let c = circles[i];
