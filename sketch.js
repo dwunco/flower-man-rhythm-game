@@ -10,14 +10,12 @@ let maxScore = 0;
 let totalNotes = 0;
 let timePassed = 0;
 let accuracy;
-let colourIndex = 0;
-let colours = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
 
 function preload() {
-    hitSound = loadSound('./hit.mp3'); 
+    hitSound = loadSound('./hit.mp3');
 }
 
-function determineRanking(accuracy) {
+function determineRanking(accuracy) { // determines ranking based on accuracy
     if (accuracy == 100.00) {
         return "SSFC"
     }
@@ -47,13 +45,13 @@ function determineRanking(accuracy) {
     }
 }
 
-function getSecondsFromBeat(bar, beat, semiquaver) {
+function getSecondsFromBeat(bar, beat, semiquaver) { // converts musical notes into seconds
     let secondsPerBeat = 60 / bpm;
     let totalBeats = ((bar - 1) * 4) + (beat - 1) + ((semiquaver - 1) * 0.25);
     return totalBeats * secondsPerBeat;
 }
 
-function mousePressed() {
+function mousePressed() { // starts game if game hasn't started yet
     userStartAudio();
     
     if (gameState === "START") {
@@ -66,13 +64,13 @@ function mousePressed() {
 
 function setup() {
     createCanvas(800, 800);
-    pixelDensity(1); // Standard baseline pixels to drop graphics RAM load
+    pixelDensity(1);
     
-    mySound = new Audio();
+    mySound = new Audio(); // creates audio object
     mySound.src = './flowerman.mp3'; 
     mySound.volume = 0.4;
 
-    mySound.addEventListener('ended', () => {
+    mySound.addEventListener('ended', () => { // detects when song ends and ends game
         gameOver();
     });
 
@@ -901,10 +899,10 @@ function setup() {
 
     for (let note of noteChart) {
         maxScore += 100;
-        let hitTime = getSecondsFromBeat(note.bar, note.beat, note.semiquaver);
-        let fallDuration = 1.2;
+        let hitTime = getSecondsFromBeat(note.bar, note.beat, note.semiquaver); // grabs when the note should be hit
+        let fallDuration = 1.2; // determines how long the note takes to fall from the top to the bototm
         
-        circles.push({
+        circles.push({ // grabs the x and y coordinates of the note and pushes it to the circles array
             x: note.x,
             y: -20,
             hitTime: hitTime,
@@ -917,7 +915,7 @@ function setup() {
     };
 }
 
-function drawBackground(timePassed) {
+function drawBackground(timePassed) { // returns orange background in the calm part of song
     if (timePassed >= getSecondsFromBeat(65, 1, 1) && timePassed < getSecondsFromBeat(97, 1, 1)) {
         return "#ff930d";
     }
@@ -926,7 +924,7 @@ function drawBackground(timePassed) {
     }
 }
 
-function lyrics(timePassed) {
+function lyrics(timePassed) { // returns lyrics based on current timepassed on song
     if (timePassed >= getSecondsFromBeat(17, 1, 1) && timePassed < getSecondsFromBeat(19, 2, 1)) {
         return "Ten feet twenty the Flower Man";
     }
@@ -1024,12 +1022,12 @@ function lyrics(timePassed) {
         return "Way up high in the sky"
     }
     else if (timePassed >= getSecondsFromBeat(122, 3, 1) && timePassed < getSecondsFromBeat(124, 3, 1)) {
-        return "With the sun in his eyes"
+        return "With the sun in your eyes"
     }
-    else if (timePassed >= getSecondsFromBeat(124, 3, 1) && timePassed < getSecondsFromBeat(126, 4, 1)) {
+    else if (timePassed >= getSecondsFromBeat(124, 3, 1) && timePassed < getSecondsFromBeat(125, 4, 1)) {
         return "Ain't it nice"
     }
-    else if (timePassed >= getSecondsFromBeat(126, 4, 1) && timePassed < getSecondsFromBeat(127, 1, 1)) {
+    else if (timePassed >= getSecondsFromBeat(125, 4, 1) && timePassed < getSecondsFromBeat(128, 1, 1)) {
         return "The life forever for"
     }
     else if (timePassed >= getSecondsFromBeat(128, 1, 1) && timePassed < getSecondsFromBeat(129, 1, 1)) {
@@ -1059,6 +1057,10 @@ function drawStartScreen() {
     fill("black");
     textSize(24);
     text("Click to Start!", width / 2, height / 2);
+    text("How to play:", width / 2, height / 2 + 50);
+    text("Use your mouse to catch the falling beats from the sky.", width / 2, height / 2 + 80);
+    text("Build your score by catching the beats!", width / 2, height / 2 + 110);
+    text("Achieve the highest score you can! Achieve your highest ranking!", width / 2, height / 2 + 140);
 }
 
 function drawGameOverScreen() {
@@ -1077,12 +1079,7 @@ function gameOver() {
 
 function runGame() {
     background(drawBackground(timePassed));
-    fill(colours[colourIndex]);
-    if (colourIndex < colours.length - 1) {
-        colourIndex++;
-    } else {
-        colourIndex = 0;
-    }
+    fill("red");
     strokeWeight(0);
 
     fill("grey")
