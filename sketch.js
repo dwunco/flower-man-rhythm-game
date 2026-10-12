@@ -979,7 +979,7 @@ function lyrics(timePassed) { // returns lyrics based on current timepassed on s
     else if (timePassed >= getSecondsFromBeat(48, 1, 1) && timePassed < getSecondsFromBeat(49, 1, 1)) {
         return "Flowers";
     }
-    if (timePassed >= getSecondsFromBeat(97, 1, 1) && timePassed < getSecondsFromBeat(99, 2, 1)) {
+    else if (timePassed >= getSecondsFromBeat(97, 1, 1) && timePassed < getSecondsFromBeat(99, 2, 1)) {
         return "Ten feet twenty the Flower Man";
     }
     else if (timePassed >= getSecondsFromBeat(99, 2, 1) && timePassed < getSecondsFromBeat(101, 3, 1)) {
